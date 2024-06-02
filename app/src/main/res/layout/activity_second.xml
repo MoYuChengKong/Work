@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="管理员操作"
+        app:titleTextColor="@color/white"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_local_library_24">
+    </ImageView>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="添加借阅记录"
+        android:onClick="add"
+        android:textAllCaps="false" /><!-- B -->
+
+    <Button
+        android:id="@+id/change"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="更改借阅记录"
+        android:onClick="change"
+        android:textAllCaps="false"/><!-- C -->
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="删除借阅记录"
+        android:onClick="delete"
+        android:textAllCaps="false"/><!-- B -->
+
+    <Button
+        android:id="@+id/find"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="查找借阅记录"
+        android:onClick="find"
+        android:textAllCaps="false"/><!-- C -->
+    <Button
+        android:id="@+id/quit"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="退出登录"
+        android:onClick="quit"
+        android:textAllCaps="false"/><!-- B -->
+
+
+
+</LinearLayout>
